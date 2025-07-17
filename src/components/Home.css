@@ -8,21 +8,35 @@
   background-color: #f0f0f0;
 }
 
-.header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+body {
+  background: #e3eafc;
 }
-
-.body-container {
+.home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
-  padding: 2rem;
+  min-height: 70vh;
 }
+.home-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1976d2;
+  margin-bottom: 18px;
+}
+.home-desc {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 32px;
+}
+.home-card {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border-radius: 10px;
+  padding: 28px 36px;
+  margin-top: 16px;
+}
+
 
 .body-container h2 {
   font-size: 2rem;
@@ -55,13 +69,3 @@
   text-align: center;
   clear: both;
 }
-
-/* This CSS code adds basic styling to the Home component, including:
-
-- A full-height and full-width container with a light gray background.
-- A dark gray header with white text.
-- A body container with centered content and a bit of padding.
-- A button group with two buttons that have a dark gray background and white text.
-- A footer with a dark gray background and white text.
-
-You can adjust the styles to fit your specific design needs. */
