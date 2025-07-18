@@ -1,35 +1,23 @@
-import { useNavigate } from "react-router-dom";
-import Header from "./Header";
-import Footer from "./Footer";
-import './Home.css';
+import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-const Home = ()=>{
-
-    const navigate = useNavigate()
-
-    return(
-        <>
-            <div className = "home-container">
-                <div className = "header">
-                    <Header/>
-                </div>
-                    <div className = "body-container">
-                        <h2>Select an Option</h2>
-                        <div className = "button-group">
-                            <button onClick = {()=>navigate('/register')}>
-                                Register
-                            </button>
-                            <button onClick = {()=>navigate('/login')}>
-                                Login
-                            </button>
-                        </div>
-                    </div>
-                <div className = "footer">
-                    <Footer/>
-                </div>
-            </div>
-        </>
-    );
+const Home = () => {
+  return (
+    <div
+      className="d-flex justify-content-center align-items-center vh-100 text-white"
+      style={{
+        backgroundColor: "#121212", // 🔧 Changed to solid dark background
+        flexDirection: "column",
+      }}
+    >
+      <h1 className="display-4 mb-3 text-light"> {/* 🔧 Ensured light heading */}
+        Employee Management System
+      </h1>
+      <p className="lead text-secondary"> {/* 🔧 Muted light gray for subtitle */}
+        Welcome! Manage your employees efficiently.
+      </p>
+    </div>
+  );
 };
 
 export default Home;
